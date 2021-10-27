@@ -46,10 +46,6 @@ app.use(bodyparser.urlencoded({extended: false}));
 app.use(express.static('build'));
 app.use('/api', api)
 
-app.get('/', (req,res) => {
-    console.log("hello")
-})
-
 server.listen(port, () => {
     console.log("Server listing port " + port)
 })

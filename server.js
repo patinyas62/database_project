@@ -10,7 +10,7 @@ const api = require('./route/databae_api.api')
 const port = 80
 const config = {
     // user: "sa",
-    user:"projectdatabasepon01",
+    user:"sqlserver",
     // password: "5HEe1Ybq",
     password: "ciKC3wPavGskdusr",
     server: "34.126.190.34",
@@ -43,6 +43,7 @@ app.use(bodyparser.json());
 app.use(bodyparser.urlencoded({extended: false}));
 
 app.use('/api', api)
+app.use(express.static('build'));
 
 app.get('/', (req,res) => {
     console.log("hello")

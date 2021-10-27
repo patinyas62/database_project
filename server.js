@@ -7,7 +7,7 @@ const sql = require('mssql')
 
 const api = require('./route/databae_api.api')
 
-const port = 3000
+const port = 80
 const config = {
     // user: "sa",
     user:"sqlserver",
@@ -35,7 +35,7 @@ sql.connect(config,(err) => {
 app.use(cor())
 app.use(function(req,res,next){
     res.header("Access-Control-Allow-Origin", "*");
-    
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
     res.header("Access-Control-Allow-Credentials", true);
     res.header("Access-Control-Methods","GET, POST, OPTIONS, PUT, PATCH, DELETE");
     next();
@@ -46,9 +46,9 @@ app.use(bodyparser.urlencoded({extended: false}));
 app.use(express.static('build'));
 app.use('/api', api)
 
-app.get('/', (req,res) => {
-    console.log("hello")
-})
+// app.get('/', (req,res) => {
+//     console.log("hello")
+// })
 
 server.listen(port, () => {
     console.log("Server listing port " + port)

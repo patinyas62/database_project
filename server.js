@@ -43,8 +43,8 @@ app.use(function(req,res,next){
 app.use(bodyparser.json());
 app.use(bodyparser.urlencoded({extended: false}));
 
-app.use('/api', api)
 app.use(express.static('build'));
+app.use('/api', api)
 
 app.get('/', (req,res) => {
     console.log("hello")

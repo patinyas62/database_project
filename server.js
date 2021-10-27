@@ -9,10 +9,12 @@ const api = require('./route/databae_api.api')
 
 const port = 80
 const config = {
-    user: "sa",
-    password: "5HEe1Ybq",
-    server: "localhost",
-    database: "Enron_email",
+    // user: "sa",
+    user:"projectdatabasepon01",
+    // password: "5HEe1Ybq",
+    password: "ciKC3wPavGskdusr",
+    server: "34.126.190.34",
+    database: "Enron_email-2021-10-27-22-26",
     options: {
         "encrypt": false,
         trustedconnection: true,

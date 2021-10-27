@@ -7,7 +7,7 @@ const sql = require('mssql')
 
 const api = require('./route/databae_api.api')
 
-const port = 80
+const port = 3000
 const config = {
     // user: "sa",
     user:"sqlserver",

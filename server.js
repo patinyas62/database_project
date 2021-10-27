@@ -7,7 +7,7 @@ const sql = require('mssql')
 
 const api = require('./route/databae_api.api')
 
-const port = 3000
+const port = 80
 const config = {
     // user: "sa",
     user:"sqlserver",
@@ -27,8 +27,9 @@ sql.connect(config,(err) => {
     if (err){
         console.log(err)
         // throw
+    }else{
+        console.log("mysql connected")
     }
-    console.log("mysql connected")
 })
 
 app.use(cor())

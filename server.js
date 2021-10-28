@@ -43,7 +43,7 @@ app.use(function(req,res,next){
 app.use(bodyparser.json());
 app.use(bodyparser.urlencoded({extended: false}));
 
-app.use(express.static('build'));
+// app.use(express.static('build'));
 app.use('/api', api)
 
 server.listen(port, () => {

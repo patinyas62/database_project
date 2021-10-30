@@ -12,8 +12,8 @@ const config = {
     // user: "sa",
     user:"sqlserver",
     // password: "5HEe1Ybq",
-    password: "ciKC3wPavGskdusr",
-    server: "34.126.190.34",
+    password: "OMudDrguKLrmnkfn",
+    server: "35.198.201.121",
     database: "Enron_email-2021-10-27-22-26",
     options: {
         "encrypt": false,

@@ -10,10 +10,10 @@ const api = require('./route/databae_api.api')
 const port = 3000
 const config = {
     // user: "sa",
-    user:"sqlserver",
+    user:"sa",
     // password: "5HEe1Ybq",
-    password: "OMudDrguKLrmnkfn",
-    server: "35.198.201.121",
+    password: "5HewqrW12wE",
+    server: "159.223.62.22",
     database: "Enron_email-2021-10-27-22-26",
     options: {
         "encrypt": false,
